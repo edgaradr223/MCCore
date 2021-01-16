@@ -103,7 +103,7 @@ public class Reflection
     {
         try
         {
-            return Class.forName(name);
+            return MCCore.class.getClassLoader().loadClass(name);
         }
         catch (Exception ex)
         {
